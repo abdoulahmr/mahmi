@@ -1,0 +1,129 @@
+/* Section One CSS */
+
+.section-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  gap: 3rem;
+}
+
+.section-one-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-one-label {
+  color: #006aff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-one-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-one-description {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.section-one-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.section-one-list-item {
+  position: relative;
+  padding: 1rem 1rem 1rem 2.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgba(0, 106, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 3px solid #006aff;
+}
+
+.section-one-list-item:before {
+  content: '✓';
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: #006aff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.section-one-list-item:hover {
+  background: rgba(0, 106, 255, 0.2);
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 106, 255, 0.3);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-one {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .section-one-title {
+    font-size: 2rem;
+  }
+
+  .section-one-description {
+    font-size: 1rem;
+  }
+
+  .section-one-list {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .section-one-list-item {
+    padding: 0.8rem 0.8rem 0.8rem 2rem;
+  }
+}

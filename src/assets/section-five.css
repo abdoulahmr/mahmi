@@ -1,0 +1,312 @@
+.section-five {
+    color: #ffffff;
+    padding: 5rem 2%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: 1.5625rem 1.5625rem;
+}
+
+.section-five-header {
+    margin-bottom: 3.75rem;
+}
+
+.section-five-label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #01eaff;
+    letter-spacing: 0.09375rem;
+    margin-bottom: 0.9375rem;
+    display: block;
+    font-weight: bold;
+}
+
+.section-five-heading {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.section-five-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.section-five-card {
+    background-color: #0d2050;
+    padding: 2.5rem 1.875rem;
+    border-radius: 0.75rem;
+    flex: 1 1 0%;
+    min-width: 12.5rem;
+    max-width: 17.5rem;
+    box-shadow: 0 0.5rem 1.5625rem rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-five-card:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.75rem 1.875rem rgba(0, 106, 255, 0.5);
+}
+
+.section-five-card-icon {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.5625rem;
+}
+
+.section-five-card-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.625rem;
+}
+
+.section-five-card-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #006aff;
+    margin-bottom: 1.25rem;
+}
+
+.section-five-card-price span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #b0c4de;
+    display: block;
+}
+
+.section-five-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.875rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+.section-five-features-list li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 0.75rem;
+}
+
+.section-five-checkmark-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.625rem;
+    filter: brightness(0) invert(1) sepia(1) saturate(5000%) hue-rotate(100deg);
+}
+
+.section-five-button {
+    background-color: #006aff;
+    color: #ffffff;
+    padding: 0.875rem 1.875rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: auto;
+}
+
+.section-five-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 106, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .section-five-heading {
+        font-size: 2.375rem;
+    }
+
+    .section-five-cards-container {
+        gap: 0.9375rem;
+    }
+
+    .section-five-card {
+        min-width: 12.5rem;
+        padding: 1.875rem 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-five {
+        padding: 3.75rem 3%;
+    }
+
+    .section-five-heading {
+        font-size: 2rem;
+    }
+
+    .section-five-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        overflow-x: visible;
+    }
+
+    .section-five-card {
+        width: 100%;
+        max-width: 25rem;
+        min-width: unset;
+        padding: 1.5625rem 0.9375rem;
+    }
+
+    .section-five-card-icon {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .section-five-card-name {
+        font-size: 1.25rem;
+    }
+
+    .section-five-card-price {
+        font-size: 2.25rem;
+    }
+
+    .section-five-features-list li {
+        font-size: 0.875rem;
+    }
+
+    .section-five-button {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-five {
+        padding: 2.5rem 1%;
+    }
+
+    .section-five-heading {
+        font-size: 1.75rem;
+    }
+
+    .section-five-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 0;
+        overflow-x: visible;
+    }
+
+    .section-five-card {
+        width: 100%;
+        max-width: 20rem;
+        min-width: unset;
+        padding: 1.25rem 1rem;
+    }
+
+    .section-five-card-icon {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-five-card-name {
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-five-card-price {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-five-features-list {
+        margin-bottom: 1rem;
+    }
+
+    .section-five-features-list li {
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-five-checkmark-icon {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    .section-five-button {
+        padding: 0.625rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 360px) {
+    .section-five {
+        padding: 2rem 0.5%;
+    }
+
+    .section-five-heading {
+        font-size: 1.5rem;
+    }
+
+    .section-five-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+        overflow-x: visible;
+    }
+
+    .section-five-card {
+        width: 100%;
+        max-width: 18rem;
+        min-width: unset;
+        padding: 1rem 0.75rem;
+    }
+
+    .section-five-card-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .section-five-card-name {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-five-card-price {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .section-five-features-list {
+        margin-bottom: 0.75rem;
+    }
+
+    .section-five-features-list li {
+        font-size: 0.8125rem;
+        margin-bottom: 0.375rem;
+    }
+
+    .section-five-checkmark-icon {
+        width: 0.875rem;
+        height: 0.875rem;
+        margin-right: 0.375rem;
+    }
+
+    .section-five-button {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.8125rem;
+    }
+}

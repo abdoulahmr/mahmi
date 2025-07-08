@@ -1,0 +1,215 @@
+.section-four {
+  color: #ffffff;
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Optional: Overlay for the pattern to be subtle */
+.section-four::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(11, 26, 69, 0.5); /* Adjust opacity of overlay */
+  z-index: 1;
+}
+
+.section-four > * {
+  z-index: 2; /* Ensure content is above the background pattern and overlay */
+}
+
+.section-four-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 600px;
+  flex-shrink: 0;
+}
+
+.section-four-card {
+  background-color: #0d2050; /* Slightly lighter blue for cards */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-four-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 106, 255, 0.4);
+}
+
+.section-four-card-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1) sepia(1) saturate(5000%) hue-rotate(180deg); /* Adjust if icons are already colored */
+}
+
+.section-four-card-number {
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.section-four-card-number sup {
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.section-four-card-label {
+  font-size: 16px;
+  color: #b0c4de;
+}
+
+.section-four-content {
+  flex: 1;
+  max-width: 550px;
+  text-align: left;
+}
+
+.section-four-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #01eaff;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: bold;
+}
+
+.section-four-heading {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.section-four-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.section-four-button {
+  background-color: #006aff;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-four-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 106, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section-four {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .section-four-content {
+    max-width: 700px;
+    text-align: center;
+    order: 1; /* Content appears first */
+  }
+
+  .section-four-cards-container {
+    max-width: 500px;
+    order: 2; /* Cards appear second */
+  }
+
+  .section-four-heading {
+    font-size: 38px;
+  }
+
+  .section-four-button {
+    margin: 0 auto; /* Center button when text is centered */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-four {
+    padding: 50px 15px;
+    gap: 30px;
+  }
+
+  .section-four-content {
+    order: 1; /* Text content appears first */
+  }
+
+  .section-four-cards-container {
+    grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    max-width: 300px; /* Limit width of stacked cards */
+    order: 2; /* Cards appear second */
+  }
+
+  .section-four-card {
+    padding: 25px;
+  }
+
+  .section-four-card-number {
+    font-size: 32px;
+  }
+
+  .section-four-heading {
+    font-size: 32px;
+  }
+
+  .section-four-description {
+    font-size: 15px;
+  }
+
+  .section-four-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-four {
+    padding: 40px 10px;
+  }
+
+  .section-four-content {
+    order: 1; /* Ensure text content stays first */
+  }
+
+  .section-four-cards-container {
+    order: 2; /* Ensure cards stay second */
+  }
+
+  .section-four-heading {
+    font-size: 28px;
+  }
+
+  .section-four-card-number {
+    font-size: 28px;
+  }
+
+  .section-four-card-label {
+    font-size: 14px;
+  }
+}

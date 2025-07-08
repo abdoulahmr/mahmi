@@ -1,0 +1,88 @@
+.section-two {
+  background-color: rgba(12, 12, 36, 0.5);
+  color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.section-two-text {
+  margin-bottom: 50px;
+}
+
+.section-two-label {
+  display: inline-block;
+  background: #6dd4ff;
+  color: #0c0c24;
+  padding: 6px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.section-two-title {
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.section-two-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.section-two-card {
+  background: #1a1a3c;
+  padding: 30px 20px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.section-two-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(109, 212, 255, 0.4); /* light blue shadow */
+}
+
+.section-two-card-image {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+.section-two-card-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #6dd4ff;
+}
+
+.section-two-card-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cfd2e1;
+}
+
+.section-two-button-container {
+  margin-top: 20px;
+}
+
+.section-two-button {
+  background: #006aff;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-two-button:hover {
+  background: #0051cc;
+  box-shadow: 0 6px 16px rgba(0, 106, 255, 0.3);
+}
